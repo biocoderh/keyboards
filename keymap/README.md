@@ -5,8 +5,10 @@ QMK keymap
 ![image](kle/base.png)
 
 Notes:
- - Tap-Hold keys (bottom on keycap.) should work on all layers except game.
- - Tap-Mode keys work only on Base, Num and Fn left side.
+ - On keycap bootom placed Mod-Tap and Tap-Hold actions.
+ - Mod-Tap work only on layers: Base, Num and Fn left side.
+ - Tap-Hold layers and boot work on all layers except game.
+ - Hold again Tap-Hold layer to return base.
 
 [Data set used to build layout.](https://github.com/biocoderh/keyboards/tree/master/layouts/data)
 
