@@ -1,0 +1,350 @@
+[
+  {
+    "backcolor": "#0d1117",
+    "css": ""
+  },
+  [
+    {
+      "y": 0.5,
+      "x": 2,
+      "c": "#21262d",
+      "t": "#79c0ff \n\n#d2a8ff\n#ff7b72\n#7d8590\n\n\n\n\n#e6edf3",
+      "fa": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "2\n\n<\nF2\nFn\n\n\n\n\nC",
+    {
+      "x": 7
+    },
+    "3\n\n>\nF3\nMouse\n\n\n\n\nU"
+  ],
+  [
+    {
+      "y": -0.9,
+      "x": 1,
+      "t": "#79c0ff \n#7ee787\n#d2a8ff\n#ff7b72\n#7d8590\n\n\n\n\n#e6edf3",
+      "fa": [
+        0,
+        2,
+        0,
+        1
+      ]
+    },
+    "4\nAlt +\n#\nF4\nProg\n\n\n\n\nP",
+    {
+      "x": 1,
+      "t": "#79c0ff \n\n#d2a8ff\n#ff7b72\n#7d8590\n\n\n\n\n#e6edf3"
+    },
+    "0\n\n{\nF10\nSym\n\n\n\n\nL",
+    {
+      "x": 5,
+      "t": "#79c0ff \n#7ee787\n#d2a8ff\n#ff7b72\n#7d8590\n\n\n\n\n#e6edf3"
+    },
+    "1\nBack\n}\nF1\nNum\n\n\n\n\nD",
+    {
+      "x": 1
+    },
+    "5\nCtrl +\n$\nF5\nMacro\n\n\n\n\nM"
+  ],
+  [
+    {
+      "y": -0.6000000000000001,
+      "t": "#79c0ff \n\n#d2a8ff\n#ff7b72\n#7d8590\n\n\n\n\n#e6edf3"
+    },
+    "6\n\n\\\nF6\nGame\n\n\n\n\nF",
+    {
+      "x": 11,
+      "t": "#79c0ff \n#7ee787\n#d2a8ff\n#ff7b72\n#7d8590\n\n\n\n\n#e6edf3"
+    },
+    "7\nFwd\n|\nF7\n\n\n\n\n\nH"
+  ],
+  [
+    {
+      "y": -0.5,
+      "x": 2,
+      "fa": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    "=\nCopy\n;\nF12\nCtrl\n\n\n\n\nN",
+    {
+      "x": 7,
+      "fa": [
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    ".\n⬇\n:\n▼\nCtrl\n\n\n\n\nI"
+  ],
+  [
+    {
+      "y": -0.8999999999999999,
+      "x": 1,
+      "fa": [
+        0,
+        2,
+        0,
+        4
+      ]
+    },
+    "-\nCut\n_\n⎙\nAlt\n\n\n\n\nR",
+    {
+      "x": 1,
+      "fa": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "n": true
+    },
+    "(\nPaste\n\"\nF11\nShift\n\n\n\n\nE",
+    {
+      "x": 5,
+      "fa": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "n": true
+    },
+    ")\n⬅\n,\n◀\nShift\n\n\n\n\nT",
+    {
+      "x": 1
+    },
+    "/\n⬆\n'\n▲\nAlt\n\n\n\n\nA"
+  ],
+  [
+    {
+      "y": -0.8500000000000001,
+      "x": 4,
+      "t": "#79c0ff \n#7ee787\n\n#ff7b72\n#7d8590\n\n\n\n\n#e6edf3",
+      "fa": [
+        0,
+        2,
+        0,
+        1
+      ]
+    },
+    "8\nRedo\n\nF8\nBoot\n\n\n\n\nJ",
+    {
+      "x": 3,
+      "t": "#79c0ff \n\n\n#ff7b72\n#7d8590\n\n\n\n\n#e6edf3",
+      "fa": [
+        2,
+        2,
+        0,
+        1
+      ]
+    },
+    "9\n\n\nF9\nBoot\n\n\n\n\nZ"
+  ],
+  [
+    {
+      "y": -0.75,
+      "t": "#79c0ff \n#7ee787\n#d2a8ff\n#ff7b72\n#7d8590\n\n\n\n\n#e6edf3",
+      "fa": [
+        0,
+        2,
+        0,
+        4
+      ]
+    },
+    "+\nUndo\n[\n⤓\nMeta\n\n\n\n\nO",
+    {
+      "x": 11,
+      "fa": [
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    "*\n⮕\n]\n▶\nMeta\n\n\n\n\nS"
+  ],
+  [
+    {
+      "y": -0.5,
+      "x": 2,
+      "t": "#79c0ff \n#7ee787\n#d2a8ff\n#ff7b72\n\n\n\n\n\n#e6edf3",
+      "fa": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    ",\nACL1\n~\n🔆\n\n\n\n\n\nY",
+    {
+      "x": 7,
+      "t": "#79c0ff \n#7ee787\n#d2a8ff\n#ff7b72\n#7d8590\n\n\n\n\n#e6edf3",
+      "fa": [
+        1,
+        0,
+        2
+      ]
+    },
+    "PgDn\n↧\n@\n<i class='kb kb-Multimedia-Volume-Down-1'></i>\n\n\n\n\n\nX"
+  ],
+  [
+    {
+      "y": -0.8999999999999999,
+      "x": 1,
+      "t": "#79c0ff \n#7ee787\n#d2a8ff\n#ff7b72\n\n\n\n\n\n#e6edf3",
+      "fa": [
+        2,
+        1,
+        0,
+        2
+      ]
+    },
+    "Ins\nACL2\n^\n🔅\n\n\n\n\n\nW",
+    {
+      "x": 1,
+      "t": "#79c0ff \n#7ee787\n#d2a8ff\n#ff7b72\n#7d8590\n\n\n\n\n#e6edf3",
+      "fa": [
+        0,
+        1,
+        0,
+        4
+      ]
+    },
+    "%\nACL0\n!\n⎉\nCaps\n\n\n\n\nG",
+    {
+      "x": 5,
+      "fa": [
+        1
+      ]
+    },
+    "Home\n↤\n&\n⏮\nLeader\n\n\n\n\nB",
+    {
+      "x": 1,
+      "t": "#79c0ff \n#7ee787\n#d2a8ff\n#ff7b72\n\n\n\n\n\n#e6edf3"
+    },
+    "PgUp\n↥\n?\n<i class='kb kb-Multimedia-Volume-Up-1'></i>\n\n\n\n\n\nV"
+  ],
+  [
+    {
+      "y": -0.6000000000000001,
+      "t": "#79c0ff \n\n#d2a8ff\n\n\n\n\n\n\n#e6edf3",
+      "fa": [
+        2
+      ]
+    },
+    "Calc\n\n`\n\n\n\n\n\n\nK",
+    {
+      "x": 11,
+      "t": "#79c0ff \n#7ee787\n\n#ff7b72\n\n\n\n\n\n#e6edf3",
+      "fa": [
+        1
+      ]
+    },
+    "End\n↦\n\n⏭\n\n\n\n\n\nQ"
+  ],
+  [
+    {
+      "y": -0.25,
+      "x": 2.75,
+      "t": "#79c0ff \n\n#d2a8ff\n#ff7b72\n#7d8590\n\n\n\n\n#e6edf3",
+      "fa": [
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6
+      ]
+    },
+    "\n\n≣\n⏽ ⏾ ⏻\nMacro\n\n\n\n\n⎋",
+    {
+      "x": 5.5,
+      "t": "#79c0ff \n#7ee787\n\n\n#7d8590\n\n\n\n\n#e6edf3",
+      "f": 3
+    },
+    "⌦\nM\n\n\nProg\n\n\n\n\n⌦"
+  ],
+  [
+    {
+      "y": 0.25,
+      "c": "#cccccc",
+      "t": "#e6edf3",
+      "f": 3,
+      "w": 5.25,
+      "d": true
+    },
+    "Biocoder.h\nhttps://github.com/biocoderh/keyboards/keymap"
+  ],
+  [
+    {
+      "r": 15,
+      "rx": 3.75,
+      "ry": 4.75,
+      "y": -1,
+      "c": "#21262d",
+      "t": "#79c0ff \n\n#d2a8ff\n#ff7b72\n\n\n\n\n\n#e6edf3",
+      "f": 3,
+      "n": true
+    },
+    "\n\n⎵\n⏯\nNum\n\n\n\n\n⎵"
+  ],
+  [
+    {
+      "r": 30,
+      "rx": 4.75,
+      "ry": 5,
+      "y": -1,
+      "t": "#79c0ff \n\n#d2a8ff\n#ff7b72\n#7ee787\n\n\n\n\n#e6edf3",
+      "f": 3
+    },
+    "\n\n↹\n<i class='kb kb-Multimedia-Mute-1'></i>\nMouse\n\n\n\n\n↹"
+  ],
+  [
+    {
+      "r": -30,
+      "rx": 8.25,
+      "y": -1,
+      "x": -1,
+      "t": "#79c0ff \n#7ee787\n\n\n#ff7b72\n\n\n\n\n#e6edf3",
+      "fa": [
+        6,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6
+      ]
+    },
+    "↵\nR\n\n\nFn\n\n\n\n\n↵"
+  ],
+  [
+    {
+      "r": -15,
+      "rx": 9.25,
+      "ry": 4.75,
+      "y": -1,
+      "x": -1,
+      "t": "#79c0ff \n#7ee787\n\n\n#d2a8ff\n\n\n\n\n#e6edf3",
+      "f": 3,
+      "n": true
+    },
+    "⌫\nL\n\n\nSym\n\n\n\n\n⌫"
+  ]
+]

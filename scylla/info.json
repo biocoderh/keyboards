@@ -1,6 +1,6 @@
 {
     "keyboard_name": "Scylla",
-    "manufacturer": "biocoder",
+    "manufacturer": "biocoder.h",
     "usb": {
         "vid": "0xBCDE",
         "pid": "0xC11A",

@@ -1,5 +1,19 @@
 #!/bin/sh
 
+VENDOR="biocoderh"
+TARGET="$2"
+
+QMK_HOME="$PWD/qmk_firmware"
+QMK_FIRMWARE="$PWD/qmk_firmware"
+QMK_USERSPACE="$QMK_FIRMWARE/users"
+QMK_KEYBOARDS="$QMK_FIRMWARE/keyboards/$VENDOR"
+
+QMK_KB="$VENDOR/$TARGET"
+QMK_KM="$3"
+
+SPLIT_SIDE=
+QMK_EE_HANDS=
+
 usage() {
     cat <<EOF
 Usage: keyboards [<command>] [<keyboard>] [<keymap>]
@@ -36,27 +50,16 @@ symlink() {
     return $?
 }
 
-VENDOR="biocoder"
-TARGET="$2"
-
-QMK_HOME="$PWD/qmk_firmware"
-QMK_FIRMWARE="$PWD/qmk_firmware"
-QMK_KEYBOARDS="$QMK_FIRMWARE/keyboards/$VENDOR"
-
-QMK_KB="$VENDOR/$TARGET"
-QMK_KM="$3"
-
-SPLIT_SIDE=
-QMK_EE_HANDS=
-
 qmk_check() {
+    symlink "$PWD/keymap" "$QMK_USERSPACE/$VENDOR"
+
     if [ -z "$TARGET" ]; then
         echo "error: <keyboard> not specified."
         usage
         exit 1
     fi
 
-    if [ ! -d "$PWD/$TARGET" ]; then
+    if [ ! -f "$PWD/$TARGET/info.json" ]; then
         echo "error: keyboard $QMK_KB not found."
         exit 1
     fi
@@ -65,7 +68,7 @@ qmk_check() {
     symlink "$PWD/$TARGET" "$QMK_KEYBOARDS/$TARGET"
 
     if [ -z "$QMK_KM" ] || [ "$QMK_KM" = "--$SPLIT_SIDE" ]; then
-        QMK_KM="default"
+        QMK_KM="$VENDOR"
         echo "Using $QMK_KM keymap."
     fi
 
