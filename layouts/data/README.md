@@ -1,6 +1,6 @@
 # Data
 
-Data used to make keymaps.
+Data used to make layouts.
 
 ## [Chained Code Bigrams 7 (1M)](./Chained_Code_Bigrams_7_(1M).txt)
 
