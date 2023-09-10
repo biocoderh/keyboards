@@ -256,10 +256,10 @@
       "x": 2.75,
       "t": "#79c0ff \n\n#d2a8ff\n#ff7b72\n#7d8590\n\n\n\n\n#e6edf3",
       "fa": [
+        0,
+        0,
+        0,
         1,
-        0,
-        0,
-        2,
         0,
         0,
         0,
@@ -268,13 +268,17 @@
         6
       ]
     },
-    "\n\n≣\n⏽ ⏾ ⏻\nProg\n\n\n\n\n⎋",
+    "≣\n\n≣\n⏽ ⏾ ⏻\nProg\n\n\n\n\n⎋",
     {
       "x": 5.5,
-      "t": "#79c0ff \n#7ee787\n\n\n#7d8590\n\n\n\n\n#e6edf3",
-      "f": 3
+      "t": "#79c0ff \n#7ee787\n#d2a8ff\n\n#7d8590\n\n\n\n\n#e6edf3",
+      "fa": [
+        2,
+        0,
+        2
+      ]
     },
-    "⌦\nM\n\n\nMacro\n\n\n\n\n⌦"
+    "⌦\nM\n⌦\n\nMacro\n\n\n\n\n⌦"
   ],
   [
     {
@@ -298,7 +302,7 @@
       "f": 3,
       "n": true
     },
-    "\n\n⎵\n⏯\nNum\n\n\n\n\n⎵"
+    "⎵\n\n⎵\n⏯\nNum\n\n\n\n\n⎵"
   ],
   [
     {
@@ -309,7 +313,7 @@
       "t": "#79c0ff \n\n#d2a8ff\n#ff7b72\n#7ee787\n\n\n\n\n#e6edf3",
       "f": 3
     },
-    "\n\n↹\n<i class='kb kb-Multimedia-Mute-1'></i>\nMouse\n\n\n\n\n↹"
+    "↹\n\n↹\n<i class='kb kb-Multimedia-Mute-1'></i>\nMouse\n\n\n\n\n↹"
   ],
   [
     {
@@ -317,12 +321,12 @@
       "rx": 8.25,
       "y": -1,
       "x": -1,
-      "t": "#79c0ff \n#7ee787\n\n\n#ff7b72\n\n\n\n\n#e6edf3",
+      "t": "#79c0ff \n#7ee787\n#d2a8ff\n\n#ff7b72\n\n\n\n\n#e6edf3",
       "fa": [
         6,
         0,
+        6,
         0,
-        2,
         0,
         0,
         0,
@@ -331,7 +335,7 @@
         6
       ]
     },
-    "↵\nR\n\n\nFn\n\n\n\n\n↵"
+    "↵\nR\n↵\n\nFn\n\n\n\n\n↵"
   ],
   [
     {
@@ -340,10 +344,14 @@
       "ry": 4.75,
       "y": -1,
       "x": -1,
-      "t": "#79c0ff \n#7ee787\n\n\n#d2a8ff\n\n\n\n\n#e6edf3",
-      "f": 3,
+      "t": "#79c0ff \n#7ee787\n#d2a8ff\n\n#d2a8ff\n\n\n\n\n#e6edf3",
+      "fa": [
+        2,
+        0,
+        2
+      ],
       "n": true
     },
-    "⌫\nL\n\n\nSym\n\n\n\n\n⌫"
+    "⌫\nL\n⌫\n\nSym\n\n\n\n\n⌫"
   ]
 ]
