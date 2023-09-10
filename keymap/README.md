@@ -5,7 +5,7 @@ QMK keymap
 ![image](kle/base.png)
 
 Notes:
- - Tap-Hold keys (bottom on pic.) should work on all layers except game.
+ - Tap-Hold keys (bottom on keycap.) should work on all layers except game.
  - Tap-Mode keys work only on Base, Num and Fn left side.
 
 [Data set used to build layout.](https://github.com/biocoderh/keyboards/tree/master/layouts/data)
