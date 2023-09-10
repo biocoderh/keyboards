@@ -52,6 +52,18 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         return false;
     }
 
+    // fix for mod-tap shifted keys
+    if (record->tap.count && record->event.pressed) {
+        switch(keycode) {
+            case LSFT_T(KC_LPRN):
+                tap_code16(KC_LPRN);
+                return false;
+            case RSFT_T(KC_RPRN):
+                tap_code16(KC_RPRN);
+                return false;
+        }
+    }
+
 #ifdef LEADER_ENABLE
     if (leader_sequence_active()) return true;
 #endif
