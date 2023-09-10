@@ -20,6 +20,7 @@ Notes:
 
 # Porting
 
+0. Copy **keymap** folder to **qmk_firmware/users/biocoderh**.
 1. Create **biocoderh** folder in **qmk_firmware/keyboards/<keyboard_path>/keymaps/**.
 2. Create **keymap.c** file.
 3. Create **config.h** file like shown in example:
