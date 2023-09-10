@@ -41,22 +41,22 @@ enum layers {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [L_BASE] = LAYOUT_biocoderh(
-        KC_F,               KC_P,               KC_C,               KC_L,                                                       KC_D,               KC_U,               KC_M,               KC_H,
-        LGUI_T(KC_O),       LALT_T(KC_R),       LCTL_T(KC_N),       LSFT_T(KC_E),       KC_J,               KC_Z,               RSFT_T(KC_T),       RCTL_T(KC_I),       RALT_T(KC_A),       RGUI_T(KC_S),
-        KC_K,               KC_W,               KC_Y,               KC_G,                                                       KC_B,               KC_X,               KC_V,               KC_Q,
+        KC_F,               KC_M,               KC_C,               KC_D,                                                       KC_L,               KC_U,               KC_P,               KC_H,
+        LGUI_T(KC_S),       LALT_T(KC_A),       LCTL_T(KC_N),       LSFT_T(KC_E),       KC_Z,               KC_J,               RSFT_T(KC_T),       RCTL_T(KC_I),       RALT_T(KC_R),       RGUI_T(KC_O),
+        KC_Q,               KC_W,               KC_X,               KC_G,                                                       KC_B,               KC_Y,               KC_V,               KC_K,
 
                                                 LT_MACRO(KC_ESC),   LT_NUM(KC_SPC),     LT_MOUSE(KC_TAB),   LT_FN(KC_ENT),      LT_SYM(KC_BSPC),    LT_PROG(KC_DEL)
     ),
     [L_NUM] = LAYOUT_biocoderh(
         KC_6,               KC_4,               KC_2,               KC_0,                                                       KC_1,               KC_3,               KC_5,               KC_7,
-        LGUI_T(KC_PPLS),    LALT_T(KC_PMNS),    LCTL_T(KC_EQL),     LSFT_T(KC_LPRN),    KC_8,               KC_9,               RSFT_T(KC_RPRN),    RCTL_T(KC_DOT),     RALT_T(KC_PSLS),    RGUI_T(KC_PAST),
+        LGUI_T(KC_PAST),    LALT_T(KC_PSLS),    LCTL_T(KC_DOT),     LSFT_T(KC_LPRN),    KC_8,               KC_9,               RSFT_T(KC_RPRN),    RCTL_T(KC_EQL),     RALT_T(KC_PMNS),    RGUI_T(KC_PPLS),
         KC_CALC,            KC_INS,             KC_COMM,            KC_PERC,                                                    KC_HOME,            KC_PGDN,            KC_PGUP,            KC_END,
 
                                                 KC_APP,             KC_SPC,             KC_TAB,             KC_ENT,             KC_BSPC,            KC_DEL
     ),
     [L_SYM] = LAYOUT_biocoderh(
-        KC_BSLS,            KC_HASH,            KC_LABK,            KC_LCBR,                                                    KC_RCBR,            KC_RABK,            KC_DLR,             KC_PIPE,
-        KC_LBRC,            KC_UNDS,            KC_SCLN,            KC_DQUO,            KC_EXLM,            KC_RPRN,            KC_COMM,            KC_COLN,            KC_QUOT,            KC_RBRC,
+        KC_BSLS,            KC_DLR,             KC_LABK,            KC_LCBR,                                                    KC_RCBR,            KC_RABK,            KC_HASH,            KC_PIPE,
+        KC_LBRC,            KC_QUOT,            KC_COLN,            KC_COMM,            KC_EXLM,            KC_RPRN,            KC_DQUO,            KC_SCLN,            KC_UNDS,            KC_RBRC,
         KC_GRV,             KC_CIRC,            KC_TILD,            KC_EXLM,                                                    KC_AMPR,            KC_AT,              KC_QUES,            KC_BSLS,
 
                                                 KC_APP,             KC_SPC,             KC_TAB,             KC_ENT,             KC_BSPC,            KC_DEL

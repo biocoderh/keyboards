@@ -34,21 +34,21 @@
         1
       ]
     },
-    "4\nAlt +\n#\nF4\nProg\n\n\n\n\nP",
+    "4\nAlt +\n$\nF4\nMacro\n\n\n\n\nM",
     {
       "x": 1,
       "t": "#79c0ff \n\n#d2a8ff\n#ff7b72\n#7d8590\n\n\n\n\n#e6edf3"
     },
-    "0\n\n{\nF10\nSym\n\n\n\n\nL",
+    "0\n\n{\nF10\nSym\n\n\n\n\nD",
     {
       "x": 5,
       "t": "#79c0ff \n#7ee787\n#d2a8ff\n#ff7b72\n#7d8590\n\n\n\n\n#e6edf3"
     },
-    "1\nBack\n}\nF1\nNum\n\n\n\n\nD",
+    "1\nBack\n}\nF1\nNum\n\n\n\n\nL",
     {
       "x": 1
     },
-    "5\nCtrl +\n$\nF5\nMacro\n\n\n\n\nM"
+    "5\nCtrl +\n#\nF5\nProg\n\n\n\n\nP"
   ],
   [
     {
@@ -58,7 +58,7 @@
     "6\n\n\\\nF6\nGame\n\n\n\n\nF",
     {
       "x": 11,
-      "t": "#79c0ff \n#7ee787\n#d2a8ff\n#ff7b72\n#7d8590\n\n\n\n\n#e6edf3"
+      "t": "#79c0ff \n#7ee787\n#d2a8ff\n#ff7b72\n\n\n\n\n\n#e6edf3"
     },
     "7\nFwd\n|\nF7\n\n\n\n\n\nH"
   ],
@@ -66,6 +66,7 @@
     {
       "y": -0.5,
       "x": 2,
+      "t": "#79c0ff \n#7ee787\n#d2a8ff\n#ff7b72\n#7d8590\n\n\n\n\n#e6edf3",
       "fa": [
         0,
         1,
@@ -73,7 +74,7 @@
         1
       ]
     },
-    "=\nCopy\n;\nF12\nCtrl\n\n\n\n\nN",
+    ".\nCopy\n:\nF12\nCtrl\n\n\n\n\nN",
     {
       "x": 7,
       "fa": [
@@ -83,7 +84,7 @@
         2
       ]
     },
-    ".\n⬇\n:\n▼\nCtrl\n\n\n\n\nI"
+    "=\n⬇\n;\n▼\nCtrl\n\n\n\n\nI"
   ],
   [
     {
@@ -96,7 +97,7 @@
         4
       ]
     },
-    "-\nCut\n_\n⎙\nAlt\n\n\n\n\nR",
+    "/\nCut\n'\n⎙\nAlt\n\n\n\n\nA",
     {
       "x": 1,
       "fa": [
@@ -107,7 +108,7 @@
       ],
       "n": true
     },
-    "(\nPaste\n\"\nF11\nShift\n\n\n\n\nE",
+    "(\nPaste\n,\nF11\nShift\n\n\n\n\nE",
     {
       "x": 5,
       "fa": [
@@ -118,11 +119,11 @@
       ],
       "n": true
     },
-    ")\n⬅\n,\n◀\nShift\n\n\n\n\nT",
+    ")\n⬅\n\"\n◀\nShift\n\n\n\n\nT",
     {
       "x": 1
     },
-    "/\n⬆\n'\n▲\nAlt\n\n\n\n\nA"
+    "-\n⬆\n_\n▲\nAlt\n\n\n\n\nR"
   ],
   [
     {
@@ -136,7 +137,7 @@
         1
       ]
     },
-    "8\nRedo\n\nF8\nBoot\n\n\n\n\nJ",
+    "8\nRedo\n\nF8\nBoot\n\n\n\n\nZ",
     {
       "x": 3,
       "t": "#79c0ff \n\n\n#ff7b72\n#7d8590\n\n\n\n\n#e6edf3",
@@ -147,7 +148,7 @@
         1
       ]
     },
-    "9\n\n\nF9\nBoot\n\n\n\n\nZ"
+    "9\n\n\nF9\nBoot\n\n\n\n\nJ"
   ],
   [
     {
@@ -160,7 +161,7 @@
         4
       ]
     },
-    "+\nUndo\n[\n⤓\nMeta\n\n\n\n\nO",
+    "*\nUndo\n[\n⤓\nMeta\n\n\n\n\nS",
     {
       "x": 11,
       "fa": [
@@ -170,7 +171,7 @@
         2
       ]
     },
-    "*\n⮕\n]\n▶\nMeta\n\n\n\n\nS"
+    "+\n⮕\n]\n▶\nMeta\n\n\n\n\nO"
   ],
   [
     {
@@ -184,23 +185,21 @@
         2
       ]
     },
-    ",\nACL1\n~\n🔆\n\n\n\n\n\nY",
+    ",\nACL1\n~\n🔆\n\n\n\n\n\nX",
     {
       "x": 7,
-      "t": "#79c0ff \n#7ee787\n#d2a8ff\n#ff7b72\n#7d8590\n\n\n\n\n#e6edf3",
       "fa": [
         1,
         0,
         2
       ]
     },
-    "PgDn\n↧\n@\n<i class='kb kb-Multimedia-Volume-Down-1'></i>\n\n\n\n\n\nX"
+    "PgDn\n↧\n@\n<i class='kb kb-Multimedia-Volume-Down-1'></i>\n\n\n\n\n\nY"
   ],
   [
     {
       "y": -0.8999999999999999,
       "x": 1,
-      "t": "#79c0ff \n#7ee787\n#d2a8ff\n#ff7b72\n\n\n\n\n\n#e6edf3",
       "fa": [
         2,
         1,
@@ -241,7 +240,7 @@
         2
       ]
     },
-    "Calc\n\n`\n\n\n\n\n\n\nK",
+    "Calc\n\n`\n\n\n\n\n\n\nQ",
     {
       "x": 11,
       "t": "#79c0ff \n#7ee787\n\n#ff7b72\n\n\n\n\n\n#e6edf3",
@@ -249,7 +248,7 @@
         1
       ]
     },
-    "End\n↦\n\n⏭\n\n\n\n\n\nQ"
+    "End\n↦\n\n⏭\n\n\n\n\n\nK"
   ],
   [
     {
@@ -269,13 +268,13 @@
         6
       ]
     },
-    "\n\n≣\n⏽ ⏾ ⏻\nMacro\n\n\n\n\n⎋",
+    "\n\n≣\n⏽ ⏾ ⏻\nProg\n\n\n\n\n⎋",
     {
       "x": 5.5,
       "t": "#79c0ff \n#7ee787\n\n\n#7d8590\n\n\n\n\n#e6edf3",
       "f": 3
     },
-    "⌦\nM\n\n\nProg\n\n\n\n\n⌦"
+    "⌦\nM\n\n\nMacro\n\n\n\n\n⌦"
   ],
   [
     {
