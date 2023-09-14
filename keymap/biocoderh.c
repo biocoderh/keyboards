@@ -80,6 +80,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     }
 
     switch (keycode_at_keymap_location(L_BASE, record->event.key.row, record->event.key.col)) {
+        case TH_BASE_L:
+        case TH_BASE_R:
+            return process_tap_hold_layer(keycode, record, L_BASE, TAP_HOLD_LAYER_TERM);
+
         case TH_NUM: return process_tap_hold_layer(keycode, record, L_NUM, TAP_HOLD_LAYER_TERM);
         case TH_SYM: return process_tap_hold_layer(keycode, record, L_SYM, TAP_HOLD_LAYER_TERM);
         case TH_MOUSE: return process_tap_hold_layer(keycode, record, L_MOUSE, TAP_HOLD_LAYER_TERM);
