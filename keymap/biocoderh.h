@@ -72,10 +72,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [L_FN] = LAYOUT_biocoderh(
         KC_F8,              KC_F2,              KC_F10,             KC_F6,                                                      KC_F7,              KC_F1,              KC_F3,              KC_F9,
-        LGUI_T(KC_SCRL),    LALT_T(KC_PSCR),    LCTL_T(KC_F12),     LSFT_T(KC_F11),     KC_F4,              KC_F5,              KC_LEFT,            KC_DOWN,            KC_UP,              KC_RIGHT,
-        KC_WAKE,            KC_BRID,            KC_BRIU,            KC_PAUS,                                                    KC_MPRV,            KC_VOLD,            KC_VOLU,            KC_MNXT,
+        LGUI_T(KC_APP),     LALT_T(KC_F12),     LCTL_T(KC_F11),     LSFT_T(KC_PSCR),    KC_F4,              KC_F5,              KC_LEFT,            KC_DOWN,            KC_UP,              KC_RIGHT,
+        KC_WAKE,            KC_BRID,            KC_BRIU,            KC_SCRL,                                                    KC_MPRV,            KC_VOLD,            KC_VOLU,            KC_MNXT,
 
-                                                KC_APP,             KC_MPLY,            KC_MUTE,            KC_NO,              KC_NO,              KC_NO
+                                                KC_PAUS,             KC_MPLY,           KC_MUTE,            KC_NO,              KC_NO,              KC_NO
     ),
     [L_PROG] = LAYOUT_biocoderh(
         PB_1,               PB_2,               PB_3,               PB_4,                                                       PB_5,               PB_6,               PB_7,               PB_8,

@@ -74,7 +74,7 @@
         1
       ]
     },
-    ".\nCopy\n:\nF12\nCtrl\n\n\n\n\nI",
+    ".\nCopy\n:\nF11\nCtrl\n\n\n\n\nI",
     {
       "x": 7,
       "fa": [
@@ -94,21 +94,21 @@
         0,
         2,
         0,
-        4
+        1
       ]
     },
-    "/\nCut\n'\n⎙\nAlt\n\n\n\n\nA",
+    "/\nCut\n'\nF12\nAlt\n\n\n\n\nA",
     {
       "x": 1,
       "fa": [
         0,
         1,
         0,
-        1
+        0
       ],
       "n": true
     },
-    "(\nPaste\n,\nF11\nShift\n\n\n\n\nE",
+    "(\nPaste\n,\n⎙\nShift\n\n\n\n\nE",
     {
       "x": 5,
       "fa": [
@@ -149,10 +149,10 @@
         0,
         2,
         0,
-        4
+        0
       ]
     },
-    "*\nUndo\n[\n⤓\nMeta\n\n\n\n\nO",
+    "*\nUndo\n[\n≣\nMeta\n\n\n\n\nO",
     {
       "x": 11,
       "fa": [
@@ -204,10 +204,10 @@
         0,
         1,
         0,
-        4
+        0
       ]
     },
-    "%\nACL0\n$\n⎉\nCaps\n\n\n\n\nU",
+    "%\nACL0\n$\n⤓\nCaps\n\n\n\n\nU",
     {
       "x": 5,
       "fa": [
@@ -260,7 +260,7 @@
         6
       ]
     },
-    "⎋\n\n⎋\n≣\nProg\n\n\n\n\n⎋",
+    "⎋\n\n⎋\n⎉\nProg\n\n\n\n\n⎋",
     {
       "x": 5.5,
       "t": "#79c0ff \n#7ee787\n#d2a8ff\n\n#7d8590\n\n\n\n\n#e6edf3",
