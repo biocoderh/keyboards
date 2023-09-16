@@ -68,7 +68,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_UNDO,            KC_CUT,             KC_COPY,            KC_PASTE,           A(KC_F4),           C(KC_F5),           KC_MS_L,            KC_MS_DOWN,         KC_MS_UP,           KC_MS_R,
         KC_AGIN,            KC_ACL2,            KC_ACL1,            KC_ACL0,                                                    KC_WH_L,            KC_WH_D,            KC_WH_U,            KC_WH_R,
 
-                                                KC_NO,              KC_NO,              KC_NO,              KC_BTN3,            KC_BTN1,            KC_BTN2
+                                                KC_NO,              KC_NO,              KC_NO,              KC_BTN2,            KC_BTN1,            KC_BTN3
     ),
     [L_FN] = LAYOUT_biocoderh(
         KC_F8,              KC_F2,              KC_F10,             KC_F6,                                                      KC_F7,              KC_F1,              KC_F3,              KC_F9,
