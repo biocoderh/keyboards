@@ -7,6 +7,30 @@
 ./keyboards flash scylla via
 ```
 
+## Troubleshooting
+
+### Debounce
+
+If you have issues with constant key repeats adjust [debounce](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_debounce_type.md) in **config.h**:
+
+```c
+#define DEBOUNCE 0 // default: 5
+```
+
+**rules.mk**:
+
+```makefile
+DEBOUNCE_TYPE = sym_eager_pk # default: sym_defer_g
+```
+
+### Serial speed
+
+If you have issues with split features try to lower baud rate by increasing following value in **config.h**:
+
+```c
+#define SELECT_SOFT_SERIAL_SPEED 0 // default: 1
+```
+
 ## Flash
 
 Use **./keyboards** scripts:
