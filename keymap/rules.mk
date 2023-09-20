@@ -1,5 +1,5 @@
-CONSOLE_ENABLE = no
 LTO_ENABLE = yes
+CONSOLE_ENABLE = no
 
 MOUSEKEY_ENABLE = yes
 EXTRAKEY_ENABLE = yes
@@ -14,4 +14,4 @@ INTROSPECTION_KEYMAP_C = biocoderh.c
 OS_KEYS_ENABLE = yes
 TAP_HOLD_ENABLE = yes
 
-include $(USER_PATH)/post_rules.mk
+include $(USER_PATH)/features.mk

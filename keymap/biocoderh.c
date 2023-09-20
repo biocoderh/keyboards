@@ -15,18 +15,6 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 
     return state;
 }
-
-bool get_custom_auto_shifted_key(uint16_t keycode, keyrecord_t *record) {
-    return (
-#if defined(AUTO_SHIFT_ENABLE) && defined(RETRO_SHIFT) && !defined(NO_ACTION_TAPPING)
-        IS_RETRO(keycode) ||
-#endif
-#ifdef OS_KEYS_ENABLE
-        os_keys_auto_shifted_key(keycode) ||
-#endif
-        false
-    );
-}
 #endif // AUTO_SHIFT_ENABLE
 
 
@@ -47,6 +35,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     if (IS_LAYER_ON(L_GAME0) || IS_LAYER_ON(L_GAME1)) return true;
 
+#ifdef LEADER_ENABLE
+    if (leader_sequence_active()) return true;
+#endif
+
     if (IS_USER_KEYCODE(keycode)) {
         custom_user(keycode, record);
         return false;
@@ -63,10 +55,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 return false;
         }
     }
-
-#ifdef LEADER_ENABLE
-    if (leader_sequence_active()) return true;
-#endif
 
 #ifdef OS_KEYS_ENABLE
     if (!process_os_keys(keycode, record)) return false;

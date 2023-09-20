@@ -2,6 +2,7 @@
 REPEAT_KEY_ENABLE = yes
 
 SRC += features/common.c
+SRC += features/features.c
 
 ifeq ($(strip $(OS_KEYS_ENABLE)), yes)
     SRC += features/os_keys.c
