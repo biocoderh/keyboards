@@ -16,6 +16,9 @@ jobs:
     runs-on: ubuntu-latest
     container: ghcr.io/qmk/qmk_cli
     steps:
+    - name: Disable safe.directory check
+      run : git config --global --add safe.directory '*'
+
     - name: Checkout
       uses: actions/checkout@v4
 

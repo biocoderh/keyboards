@@ -1,6 +1,5 @@
 [![Scylla-lint](https://github.com/biocoderh/keyboards/actions/workflows/scylla-lint.yml/badge.svg)](https://github.com/biocoderh/keyboards/actions/workflows/scylla-lint.yml)
 
-
 # Scylla
 
 [Scylla](https://github.com/Bastardkb/Scylla) case with pro micro
