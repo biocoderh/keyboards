@@ -1,4 +1,4 @@
-[![Scylla-lint](https://github.com/biocoderh/keyboards/actions/workflows/scylla-lint.yml/badge.svg)](https://github.com/biocoderh/keyboards/actions/workflows/scylla-lint.yml)
+[![Scylla lint](https://github.com/biocoderh/keyboards/actions/workflows/scylla-lint.yml/badge.svg)](https://github.com/biocoderh/keyboards/actions/workflows/scylla-lint.yml)
 
 # Scylla
 

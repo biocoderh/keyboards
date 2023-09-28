@@ -1,4 +1,4 @@
-[![Keymap-lint](https://github.com/biocoderh/keyboards/actions/workflows/keymap-lint.yml/badge.svg)](https://github.com/biocoderh/keyboards/actions/workflows/keymap-lint.yml)
+[![Keymap lint](https://github.com/biocoderh/keyboards/actions/workflows/keymap-lint.yml/badge.svg)](https://github.com/biocoderh/keyboards/actions/workflows/keymap-lint.yml)
 
 # Keymap
 
