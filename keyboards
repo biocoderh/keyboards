@@ -97,13 +97,10 @@ qmk_check() {
     fi
 }
 
-qmk_env() {
-    echo QMK_HOME="$QMK_HOME" QMK_FIRMWARE="$QMK_FIRMWARE" qmk $@
-    QMK_HOME="$QMK_HOME" QMK_FIRMWARE="$QMK_FIRMWARE" qmk $@
-}
-
 qmk_cmd() {
-    qmk_env "$1" -kb "$QMK_KB" -km "$QMK_KM" "$2"
+    CMD="QMK_HOME=$QMK_HOME QMK_FIRMWARE=$QMK_FIRMWARE qmk $1 -kb $QMK_KB -km $QMK_KM $2"
+    echo "$CMD"
+    sh -c "$CMD"
 }
 
 qmk_lint() {
