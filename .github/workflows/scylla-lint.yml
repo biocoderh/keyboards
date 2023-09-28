@@ -28,6 +28,6 @@ jobs:
     - name: QMK lint
       run: |
         for dir in scylla/keymaps/*/; do
-          ./keyboards lint scylla "$dir"
+          KEYMAP=$(echo "$dir" | cut -d/ -f3)
+          ./keyboards lint scylla "$KEYMAP"
         done
-        
