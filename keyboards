@@ -37,7 +37,7 @@ update() {
 }
 
 symlink() {
-    [ -n $MSYSTEM ] && export MSYS=winsymlinks:nativestrict
+    [ -n "$MSYSTEM" ] && export MSYS=winsymlinks:nativestrict
 
     [ "$(readlink -f "$2")" = "$1" ] && return 0
 
@@ -107,11 +107,11 @@ qmk_cmd() {
 }
 
 qmk_lint() {
-    qmk_cmd lint --strict $@
+    qmk_cmd lint --strict
 }
 
 qmk_compile() {
-    qmk_cmd compile $@
+    qmk_cmd compile
 }
 
 qmk_flash() {
@@ -124,7 +124,7 @@ qmk_flash() {
         #OPTS="-b $FILE"
     fi
 
-    qmk_cmd flash "$OPTS" $@
+    qmk_cmd flash "$OPTS"
 }
 
 
