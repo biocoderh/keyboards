@@ -1,0 +1,26 @@
+name: Keymap lint
+
+permissions:
+  contents: read
+
+on:
+  push:
+    paths:
+      - 'keymap/**'
+  pull_request:
+    paths:
+      - 'keymap/**'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    container: ghcr.io/qmk/qmk_cli
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: QMK firmware update
+      run: ./keyboards update
+
+    - name: QMK lint
+      run: ./keyboards lint scylla biocoderh

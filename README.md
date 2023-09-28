@@ -1,3 +1,5 @@
+[![ShellCheck](https://github.com/biocoderh/keyboards/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/biocoderh/keyboards/actions/workflows/shellcheck.yml)
+
 # Keyboards
 
 QMK keyboards
