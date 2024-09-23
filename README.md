@@ -23,4 +23,9 @@ Commands:
     lint <keyboard> [<keymap>]                          lint specified firmware
     compile <keyboard> [<keymap>]                       compile specified firmware
     flash <keyboard> [<keymap>] [--left|--right]        flash specified firmware, eeprom left/right available (only for 'caterina', 'atmel-dfu')
+
+VIAL Specific:
+    vial-lint <keyboard> [<keymap>]                      lint specified firmware
+    vial-compile <keyboard> [<keymap>]                   compile specified firmware
+    vial-flash <keyboard> [<keymap>] [--left|--right]    flash specified firmware, eeprom left/right available (only for 'caterina', 'atmel-dfu')
 ```

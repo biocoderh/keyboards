@@ -8,6 +8,11 @@ QMK_FIRMWARE="$PWD/qmk_firmware"
 QMK_USERSPACE="$QMK_FIRMWARE/users"
 QMK_KEYBOARDS="$QMK_FIRMWARE/keyboards/$VENDOR"
 
+VIAL_HOME="$PWD/vial-qmk"
+VIAL_FIRMWARE="$PWD/vial-qmk"
+VIAL_USERSPACE="$VIAL_FIRMWARE/users"
+VIAL_KEYBOARDS="$VIAL_FIRMWARE/keyboards/$VENDOR"
+
 QMK_KB="$VENDOR/$TARGET"
 QMK_KM="$3"
 
@@ -19,11 +24,16 @@ usage() {
 Usage: keyboards [<command>] [<keyboard>] [<keymap>]
 
 Commands:
-    update              update git submodules (qmk_firmware)
+    update              update git submodules (qmk_firmware, vial-qmk)
 
     lint <keyboard> [<keymap>]                          lint specified firmware
     compile <keyboard> [<keymap>]                       compile specified firmware
     flash <keyboard> [<keymap>] [--left|--right]        flash specified firmware, eeprom left/right available (only for 'caterina', 'atmel-dfu')
+
+VIAL Specific:
+    vial-lint <keyboard>                                lint specified firmware
+    vial-compile <keyboard>                             compile specified firmware
+    vial-flash <keyboard> [--left|--right]              flash specified firmware, eeprom left/right available (only for 'caterina', 'atmel-dfu')
 EOF
 }
 
@@ -125,6 +135,81 @@ qmk_flash() {
 }
 
 
+vial_check() {
+    symlink "$PWD/keymap" "$VIAL_USERSPACE/$VENDOR"
+
+    if [ -z "$TARGET" ]; then
+        echo "error: <keyboard> not specified."
+        usage
+        exit 1
+    fi
+
+    if [ ! -f "$PWD/$TARGET/info.json" ]; then
+        echo "error: keyboard $QMK_KB not found."
+        exit 1
+    fi
+
+    mkdir -p "$VIAL_KEYBOARDS"
+    symlink "$PWD/$TARGET" "$VIAL_KEYBOARDS/$TARGET"
+
+    if [ -z "$QMK_KM" ] || [ "$QMK_KM" = "--$SPLIT_SIDE" ]; then
+        QMK_KM="$VENDOR"
+        echo "Using $QMK_KM keymap."
+    fi
+
+    if [ ! -d "$PWD/$TARGET/keymaps/$QMK_KM" ]; then
+        echo "error: keymap $QMK_KM not found."
+        exit 1
+    fi
+
+    if ! [ -x "$(command -v qmk)" ]; then
+        echo "qmk is not installed."
+        echo "Follow setup instructions by link: https://docs.qmk.fm/#/newbs_getting_started"
+        exit 1
+    fi
+
+    [ ! -d "$PWD/vial-qmk" ] && update
+
+    # Handedness by EEPROM
+    if [ -n "$SPLIT_SIDE" ]; then
+        if grep -q -x -F '#define EE_HANDS' "$PWD/$TARGET/config.h"; then
+            if grep -q -F '"bootloader": "caterina",' "$PWD/$TARGET/info.json"; then
+                QMK_EE_HANDS="avrdude-split-$SPLIT_SIDE"
+            elif grep -q -F '"bootloader": "atmel-dfu",' "$PWD/$TARGET/info.json"; then
+                QMK_EE_HANDS="dfu-split-$SPLIT_SIDE"
+            fi
+        fi
+    fi
+}
+
+vial_cmd() {
+    CMD="QMK_HOME=$VIAL_HOME QMK_FIRMWARE=$VIAL_FIRMWARE qmk $1 -kb $QMK_KB -km vial $2"
+    echo "$CMD"
+    sh -c "$CMD"
+}
+
+vial_lint() {
+    vial_cmd lint --strict
+}
+
+vial_compile() {
+    vial_cmd compile
+}
+
+vial_flash() {
+    OPTS=""
+    #FILE="$QMK_HOME/.build/${QMK_KB//\//\_}_$QMK_KM.hex"
+
+    if [ -n "$QMK_EE_HANDS" ]; then
+        OPTS="-bl $QMK_EE_HANDS"
+    #elif [ -f "$FILE" ]; then
+        #OPTS="-b $FILE"
+    fi
+
+    vial_cmd flash "$OPTS"
+}
+
+
 case $@ in
     *"--left"*)
         SPLIT_SIDE="left"
@@ -150,6 +235,18 @@ case $1 in
     flash)
         qmk_check
         qmk_flash
+        ;;
+    vial-lint)
+        vial_check
+        vial_lint
+        ;;
+    vial-compile)
+        vial_check
+        vial_compile
+        ;;
+    vial-flash)
+        vial_check
+        vial_flash
         ;;
     *)
         usage

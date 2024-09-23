@@ -1,0 +1,5 @@
+// Copyright 2023 Biocoder.h <biocoder.h@gmail.com>
+
+#pragma once
+
+#define VIAL_KEYBOARD_UID {0xB8, 0xB7, 0x9F, 0x45, 0x15, 0x76, 0x8A, 0x54}
