@@ -3,3 +3,6 @@
 	url = https://github.com/qmk/qmk_firmware.git
 	ignore = untracked
 	shallow = true
+[submodule "vial-qmk"]
+	path = vial-qmk
+	url = https://github.com/vial-kb/vial-qmk
