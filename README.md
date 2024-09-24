@@ -18,14 +18,14 @@ Use **./keyboards** script or simply copy needed keyboard folder to **qmk_firmwa
 Usage: keyboards [<command>] [<keyboard>] [<keymap>]
 
 Commands:
-    update              update git submodules (qmk_firmware)
+    update              update git submodules (qmk_firmware, vial-qmk)
 
     lint <keyboard> [<keymap>]                          lint specified firmware
     compile <keyboard> [<keymap>]                       compile specified firmware
     flash <keyboard> [<keymap>] [--left|--right]        flash specified firmware, eeprom left/right available (only for 'caterina', 'atmel-dfu')
 
 VIAL Specific:
-    vial-lint <keyboard> [<keymap>]                      lint specified firmware
-    vial-compile <keyboard> [<keymap>]                   compile specified firmware
-    vial-flash <keyboard> [<keymap>] [--left|--right]    flash specified firmware, eeprom left/right available (only for 'caterina', 'atmel-dfu')
+    vial-lint <keyboard>                                lint specified firmware
+    vial-compile <keyboard>                             compile specified firmware
+    vial-flash <keyboard> [--left|--right]              flash specified firmware, eeprom left/right available (only for 'caterina', 'atmel-dfu')
 ```

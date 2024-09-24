@@ -9,6 +9,11 @@
 ./keyboards flash scylla via
 ```
 
+[VIAL](https://vial.rocks/) keymap supported:
+```console
+./keyboards vial-flash scylla
+```
+
 
 ## Flash
 
